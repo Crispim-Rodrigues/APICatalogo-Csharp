@@ -16,7 +16,7 @@ namespace APICatalogo
             builder.Services.AddSwaggerGen();
 
 
-            var myConn = builder.Configuration.GetConnectionString("DefaultConnection");
+            string? myConn = builder.Configuration.GetConnectionString("DefaultConnection");
 
 
             builder.Services.AddDbContext<AppDbContext>(options => 
