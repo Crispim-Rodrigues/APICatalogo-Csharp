@@ -19,7 +19,7 @@ namespace APICatalogo.Controllers
         [HttpGet("produtos")]
         public ActionResult<IEnumerable<Categoria>> GetCategoriasProdutos()
         {
-            return _context.Categorias.Include(p=> p.Produtos).ToList();
+            return _context.Categorias.Include(p => p.Produtos).ToList();
         }
 
         [HttpGet]
